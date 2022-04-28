@@ -29,6 +29,8 @@ It also attempts to convert your audio files into ".wav" files, and adds an addi
 
 Fmod Bank Tools is used to extract the Remake's ".bank" files and then to rebuild them with the modified soundtrack.
 
+If you get the error "FSBExtract.dll DLL Not Found" when trying to run the tool, you must download and install [Microsoft Visual C++ 2017 Redistributable x86](https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022).
+
 ***Download Fmod Bank Tools here:*** https://www.nexusmods.com/rugbyleaguelive3/mods/2?tab=files
 
 <br>
@@ -150,5 +152,7 @@ You must provide your copy of the original soundtrack, either from the Saturn ve
 8. Copy the modified ".bank" files into the Remake's "StreamingAssets" folder, replacing the original ones.
 
     <br>
+    
+---
 
-    And that's it, enjoy listening to the original soundtrack in THE HOUSE OF THE DEAD: Remake!
+And that's it, enjoy listening to the original soundtrack in THE HOUSE OF THE DEAD: Remake!

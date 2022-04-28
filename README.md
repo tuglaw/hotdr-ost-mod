@@ -1,6 +1,6 @@
 # Original Soundtrack Mod for THE HOUSE OF THE DEAD: Remake
 
-![Mod Logo](https://repository-images.githubusercontent.com/486545456/79e81dfc-6c06-458a-9bb2-f6a4046dacad "Mod Logo.")<br>
+![HOTDR Original Soundtrack Mod logo.](https://repository-images.githubusercontent.com/486545456/79e81dfc-6c06-458a-9bb2-f6a4046dacad "HOTDR Original Soundtrack Mod logo.")<br>
 
 <br>
 
@@ -51,13 +51,13 @@ You must provide your copy of the original soundtrack, either from the Saturn ve
 
     It should all look like this:<br>
     
-    ![Mod Logo](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/1.png "Fmod Bank Tools folder with script contents extracted.")<br>
+    ![Fmod Bank Tools folder with script contents extracted.](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/1.png "Fmod Bank Tools folder with script contents extracted.")<br>
 
     <br>
 
 3. Copy your ***original soundtrack files*** into the ***"original" folder***.
 
-    ![Mod Logo](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/2.png "\"original\" folder with \".wav\" audio files.")<br>
+    ![\"original\" folder with \".wav\" audio files.](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/2.png "\"original\" folder with \".wav\" audio files.")<br>
     
     <br>
 
@@ -67,6 +67,8 @@ You must provide your copy of the original soundtrack, either from the Saturn ve
 
     If your soundtrack files aren't in ".wav" format, the script will use ffmpeg to try and convert them.
     Make sure they are audio files, this script was only tested with MP3, FLAC and OGG files.
+    
+    *Note: To my knowledge, there is no version of Track 12 in the Remake.*
 
     <br>
 
@@ -83,25 +85,25 @@ You must provide your copy of the original soundtrack, either from the Saturn ve
     
     <br>
     
-    ![Mod Logo](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/3.png "\"bank\" folder with the game's \"*.bank\" files.")<br>
+    ![\"bank\" folder with the game's \"*.bank\" files.](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/3.png "\"bank\" folder with the game's \"*.bank\" files.")<br>
 
     <br>
 
 5. Run Fmod Bank Tools and press the Extract button.
 
-    ![Mod Logo](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/4.png "The Fmod Bank Tools program with the Extract button highlighted.")<br>
+    ![The Fmod Bank Tools program with the Extract button highlighted.](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/4.png "The Fmod Bank Tools program with the Extract button highlighted.")<br>
     
     <br>
 
     The progress bar fills up to 100% for each ".bank" file. It will take a while.
 
-    ![Mod Logo](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/5.png "The Fmod Bank Tools program extracting the \"*.bank\" files.")<br>
+    ![The Fmod Bank Tools program extracting the \"*.bank\" files.](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/5.png "The Fmod Bank Tools program extracting the \"*.bank\" files.")<br>
     
     <br>
 
      Once it's done extracting, click OK but don't close the program.
     
-    ![Mod Logo](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/6.png "The Fmod Bank Tools program with the extraction process completed.")<br>
+    ![The Fmod Bank Tools program with the extraction process completed.](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/6.png "The Fmod Bank Tools program with the extraction process completed.")<br>
 
     <br>
 
@@ -109,49 +111,66 @@ You must provide your copy of the original soundtrack, either from the Saturn ve
 
     If you get any file copying errors, you might need to use "Run as Administrator".
 
-    ![Mod Logo](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/7.png "Command Prompt window with script running.")<br>
+    ![Command Prompt window with script running.](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/7.png "Command Prompt window with script running.")<br>
     
     <br>
 
     If your soundtrack files aren't in ".wav" format, the script will use ffmpeg to try and convert them.
     Make sure they are audio files, this script was only tested with MP3, FLAC and OGG files.
 
-    ![Mod Logo](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/8.png "Script prompting to convert audio files to WAV.")<br>
+    ![Script prompting to convert audio files to WAV.](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/8.png "Script prompting to convert audio files to WAV.")<br>
+    
+    <br>
+
+    At one point the script will ask if you wish to trim your audio files.
+    
+    When extracted from the CD, all audio tracks after Track 02 begin with 2 seconds of silence.
+    This is more noticeable with the Chapted Complete track, which cuts too soon.
+    
+    If that's the case with your copy of the soundtrack, the script can trim these 2 seconds off.
+    
+    ![Script prompting to trim audio files.](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/14.png "Script prompting to trim audio files.")<br>
     
     <br>
 
     Once the script concludes without errors, go back to Fmod Bank Tools.
     
-    ![Mod Logo](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/9.png "Script has finished running.")<br>
+    ![Script has finished running.](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/9.png "Script has finished running.")<br>
 
     <br>
 
 7. Return to the Fmod Bank Tools and press the Rebuild button.
 
-    ![Mod Logo](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/10.png "The Fmod Bank Tools program with the Rebuild button highlighted.")<br>
+    ![The Fmod Bank Tools program with the Rebuild button highlighted.](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/10.png "The Fmod Bank Tools program with the Rebuild button highlighted.")<br>
     
     <br>
 
     It will open a command window like this for each of the ".bank" files. It will probably take less time than the extraction process.
 
-    ![Mod Logo](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/11.png "The Fmod Bank Tools program rebuilding the \"*.bank\" files.")<br>
+    ![The Fmod Bank Tools program rebuilding the \"*.bank\" files.](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/11.png "The Fmod Bank Tools program rebuilding the \"*.bank\" files.")<br>
     
     <br>
 
     Once the rebuilding process is complete, you can now close the program.
     
-    ![Mod Logo](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/12.png "The Fmod Bank Tools program with the rebuilding process completed.")<br>
+    ![The Fmod Bank Tools program with the rebuilding process completed.](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/12.png "The Fmod Bank Tools program with the rebuilding process completed.")<br>
     
     <br>
 
     You'll find your modified ".bank" files inside Fmod Bank Tools' "bank" folder.
     
-    ![Mod Logo](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/13.png "\"bank\" folder with the now modified game's \"*.bank\" files.")<br>
+    ![\"bank\" folder with the now modified game's \"*.bank\" files.](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/13.png "\"bank\" folder with the now modified game's \"*.bank\" files.")<br>
 
     <br>
 
 8. Copy the modified ".bank" files into the Remake's "StreamingAssets" folder, replacing the original ones.
 
+    ![\"bank\" folder with the now modified game's \"*.bank\" files.](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/13.png "\"bank\" folder with the now modified game's \"*.bank\" files.")<br>
+
+    <br>
+    
+    ![\"StreamingAssets\" folder with the now modified game's \"*.bank\" files.](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/13.png "\"StreamingAssets\" folder with the now modified game's \"*.bank\" files.")<br>
+    
     <br>
     
 ---

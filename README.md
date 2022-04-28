@@ -169,7 +169,7 @@ You must provide your copy of the original soundtrack, either from the Saturn ve
 
     <br>
     
-    ![\"StreamingAssets\" folder with the now modified game's \"*.bank\" files.](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/13.png "\"StreamingAssets\" folder with the now modified game's \"*.bank\" files.")<br>
+    ![\"StreamingAssets\" folder with the now modified game's \"*.bank\" files.](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/15.png "\"StreamingAssets\" folder with the now modified game's \"*.bank\" files.")<br>
     
     <br>
     

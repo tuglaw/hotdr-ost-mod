@@ -45,7 +45,7 @@ You must provide your copy of the original soundtrack, either from the Saturn ve
 
 <br>
 
-2. Download and extract the ***script.zip file*** into the ***Fmod Bank Tools folder***.
+2. Download and extract the contents of the ***hotdr-ost-mod-v1.0.0.zip file*** into the ***Fmod Bank Tools folder***.
 
     It should all look like this:<br>
     

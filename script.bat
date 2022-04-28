@@ -107,16 +107,52 @@ if %x% == 2 goto exit
 	echo.
 	for %%A IN (.\original\*0*.*) DO .\script\ffmpeg -y -loglevel fatal -i "%%~A" ".\original\%%~nA.wav"
 	for %%A IN (.\original\*11*.*) DO .\script\ffmpeg -y -loglevel fatal -i "%%~A" ".\original\%%~nA.wav"
-	for %%A IN (.\original\*12*.*) DO .\script\ffmpeg -y -loglevel fatal -i "%%~A" ".\original\%%~nA.wav"
+	::for %%A IN (.\original\*12*.*) DO .\script\ffmpeg -y -loglevel fatal -i "%%~A" ".\original\%%~nA.wav"
 	echo.
 	echo  :: Converting non-WAV files into WAV . . . Done
 	echo.
 	echo.
 	echo  ================================================================================
+	goto trimprompt
+
+:trimprompt
+	echo.
+	echo.
+	echo  :: Audio Trimming
+	echo.
+	echo     When extracted from the CD, all audio tracks after Track 02 begin with 2 seconds of silence.
+	echo.
+	echo     This is more noticeable with the Chapted Complete track, which cuts too soon.
+	echo.
+	echo     If that's the case with your copy of the soundtrack, the script can trim these 2 seconds off.
+	echo.
+	echo  :: Trim the audio files? [Y]es / [N]o
+	choice /C "YN" /N
+	set x=%errorlevel%
+	if %x% == 1 goto trimming
+	if %x% == 2 goto wav
+	
+:trimming
+	echo.
+	echo.
+	echo  ================================================================================
+	echo.
+	echo.
+	echo  :: Trimming audio files . . .
+	echo.
+	if not exist ".\original\temp\" mkdir .\original\temp
+	for /F "usebackq tokens=*" %%A IN (`dir /S /B .\original\*.wav ^| find /v "02"`) DO .\script\ffmpeg -y -loglevel fatal -i "%%~A" -ss 2 ".\original\temp\%%~nA.wav"
+	for %%A IN (.\original\temp\*.wav) DO xcopy /y "%%~A" ".\original\%%~nA.wav"*
+	if exist ".\original\temp\" rmdir /Q /S .\original\temp
+	echo.
+	echo  :: Trimming audio files . . . Done
 	goto wav
 
 :wav
 	::Copy and rename files, replacing the remake files
+	echo.
+	echo.
+	echo  ================================================================================
 	echo.
 	echo.
 	echo  :: Copying empty.wav and modified file lists to prevent bug that cuts off the last sound file . . .

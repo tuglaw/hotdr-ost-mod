@@ -1,0 +1,27 @@
+UI_sliderValueChange.wav
+reload_stakegun-01.wav
+ambSFX_woodCreak_01.wav
+UI_loadingFinished-01.wav
+ambSFX_tunnelRumbles_03.wav
+ambSFX_woodCreak_04.wav
+UI_select.wav
+VO_IntroTheHouseOfTheDead-01.wav
+UI_CameraZoomIn_01.wav
+UI_CameraZoomOut_01.wav
+UI_switchPages.wav
+UI_achievementSelect-01.wav
+Gallery_ArmoryOpen-01.wav
+THOTD - introduction-loop.wav
+ambSFX_woodCreak_03.wav
+mainMenuVideo_sfx-01.wav
+ambSFX_tunnelRumbles_01.wav
+UI_dropdownMenuOpen.wav
+amb_HouseInteriorDark.wav
+UI_toggle.wav
+UI_resetToDefault.wav
+Title-screen-loop.wav
+tutorialVideo_sfx-01.wav
+UI_dropdownMenuClose.wav
+ambSFX_tunnelRumbles_02.wav
+ambSFX_woodCreak_02.wav
+empty.wav

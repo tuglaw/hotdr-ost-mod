@@ -62,6 +62,7 @@ You must provide your copy of the original soundtrack, either from the Saturn ve
     <br>
 
     The soundtrack doesn't need to be named exactly as in this screenshot.
+    They can be named "Track 02" or "02 - Untitled".
     As long as their filenames contain the numbers "02" to "12" and are correctly ordered without any duplicates, the script will detect them.
 
     If your soundtrack files aren't in ".wav" format, the script will use ffmpeg to try and convert them.

@@ -85,7 +85,7 @@ You must provide your copy of the original soundtrack, either from the Saturn ve
     
     <br>
     
-    ![\"bank\" folder with the game's \"*.bank\" files.](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/3.png "\"bank\" folder with the game's \"*.bank\" files.")<br>
+    ![\"bank\" folder with the game's \".bank\" files.](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/3.png "\"bank\" folder with the game's \".bank\" files.")<br>
 
     <br>
 
@@ -97,11 +97,11 @@ You must provide your copy of the original soundtrack, either from the Saturn ve
 
     The progress bar fills up to 100% for each ".bank" file. It will take a while.
 
-    ![The Fmod Bank Tools program extracting the \"*.bank\" files.](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/5.png "The Fmod Bank Tools program extracting the \"*.bank\" files.")<br>
+    ![The Fmod Bank Tools program extracting the \".bank\" files.](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/5.png "The Fmod Bank Tools program extracting the \".bank\" files.")<br>
     
     <br>
 
-     Once it's done extracting, click OK but don't close the program.
+    Once it's done extracting, click OK but don't close the program.
     
     ![The Fmod Bank Tools program with the extraction process completed.](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/6.png "The Fmod Bank Tools program with the extraction process completed.")<br>
 
@@ -147,7 +147,7 @@ You must provide your copy of the original soundtrack, either from the Saturn ve
 
     It will open a command window like this for each of the ".bank" files. It will probably take less time than the extraction process.
 
-    ![The Fmod Bank Tools program rebuilding the \"*.bank\" files.](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/11.png "The Fmod Bank Tools program rebuilding the \"*.bank\" files.")<br>
+    ![The Fmod Bank Tools program rebuilding the \".bank\" files.](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/11.png "The Fmod Bank Tools program rebuilding the \".bank\" files.")<br>
     
     <br>
 
@@ -159,17 +159,13 @@ You must provide your copy of the original soundtrack, either from the Saturn ve
 
     You'll find your modified ".bank" files inside Fmod Bank Tools' "bank" folder.
     
-    ![\"bank\" folder with the now modified game's \"*.bank\" files.](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/13.png "\"bank\" folder with the now modified game's \"*.bank\" files.")<br>
+    ![\"bank\" folder with the now modified game's \".bank\" files.](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/13.png "\"bank\" folder with the now modified game's \".bank\" files.")<br>
 
     <br>
 
 8. Copy the modified ".bank" files into the Remake's "StreamingAssets" folder, replacing the original ones.
-
-    ![\"bank\" folder with the now modified game's \"*.bank\" files.](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/13.png "\"bank\" folder with the now modified game's \"*.bank\" files.")<br>
-
-    <br>
     
-    ![\"StreamingAssets\" folder with the now modified game's \"*.bank\" files.](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/15.png "\"StreamingAssets\" folder with the now modified game's \"*.bank\" files.")<br>
+    ![\"StreamingAssets\" folder with the now modified game's \".bank\" files.](https://github.com/tuglaw/hotdr-ost-mod/blob/main/images/15.png "\"StreamingAssets\" folder with the now modified game's \".bank\" files.")<br>
     
     <br>
     

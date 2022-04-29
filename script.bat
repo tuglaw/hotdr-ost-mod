@@ -57,7 +57,9 @@ if %x% == 2 goto exit
 	)
 		echo   ! ERROR: Folder "bank" is empty, aborting script . . .
 		echo.
+		echo.
 		echo     Please follow the instructions in the "README" file.
+		echo.
 		echo.
 		echo  :: Press any key to exit . . .
 		pause > nul
@@ -76,9 +78,11 @@ if %x% == 2 goto exit
 	) else (
 		echo  :: Script found non-WAV files
 		echo.
+		echo.
 		echo     The script can attempt to convert the audio files into WAV format.
 		echo     Make sure they are audio files.
 		echo.    This script was only tested with MP3, FLAC and OGG files.
+		echo.
 		echo.
 		echo  :: Try to convert your non-WAV audio files? [Y]es / [N]o
 		echo.
@@ -120,11 +124,13 @@ if %x% == 2 goto exit
 	echo.
 	echo  :: Audio Trimming
 	echo.
+	echo.
 	echo     When extracted from the CD, all audio tracks after Track 02 begin with 2 seconds of silence.
 	echo.
-	echo     This is more noticeable with the Chapted Complete track, which cuts too soon.
+	echo     This is more noticeable in-game with the "Chapted Clear" track, which cuts too soon.
 	echo.
 	echo     If that's the case with your copy of the soundtrack, the script can trim these 2 seconds off.
+	echo.
 	echo.
 	echo  :: Trim the audio files? [Y]es / [N]o
 	choice /C "YN" /N
@@ -155,7 +161,7 @@ if %x% == 2 goto exit
 	echo  ================================================================================
 	echo.
 	echo.
-	echo  :: Copying empty.wav and modified file lists to prevent bug that cuts off the last sound file . . .
+	echo  :: Copying empty.wav and modified file lists to prevent bug that breaks the last sound file . . .
 	echo.
 	xcopy /Y ".\script\empty.wav" ".\wav\LVL1\empty.wav"*
 	xcopy /Y ".\script\empty.wav" ".\wav\LVL2\empty.wav"*
@@ -170,6 +176,16 @@ if %x% == 2 goto exit
 	xcopy /Y ".\script\LVL4.txt" ".\wav\LVL4\LVL4.txt"*
 	xcopy /Y ".\script\MainMenu.txt" ".\wav\MainMenu\MainMenu.txt"*
 	xcopy /Y ".\script\Master.txt" ".\wav\Master\Master.txt"*
+	
+	echo.
+	echo  :: Copying empty.wav and modified file lists . . . Done
+	echo.
+	echo.
+	echo  ================================================================================
+	echo.
+	echo.
+	echo  :: Copying soundtrack files to their respective folders . . .
+	echo.
 
 	::LVL1
 	xcopy /Y ".\original\*03*.wav" ".\wav\LVL1\Chapter 1-loop.wav"*
@@ -198,7 +214,7 @@ if %x% == 2 goto exit
 	xcopy /Y ".\original\*11*.wav" ".\wav\Master\credits-loop.wav"*
 	
 	echo.
-	echo  :: Copying empty.wav and modified file lists . . . Done
+	echo  :: Copying soundtrack files to their respective folders . . . Done
 	goto end
 
 :end

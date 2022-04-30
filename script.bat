@@ -74,7 +74,7 @@ if %x% == 2 goto exit
 	echo.
 	if exist ".\original\*.wav" (
 		echo  :: Script found WAV files.
-		goto wav
+		goto trimprompt
 	) else (
 		echo  :: Script found non-WAV files
 		echo.
